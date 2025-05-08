@@ -10,7 +10,7 @@ class IndexController extends Controller
 {
     public function __invoke()
     {
-        $tasks = Task::all();
+        $tasks = auth()->user()->tasks;
         return view('tasks.index', compact('tasks'));
         // TODO: Implement __invoke() method.
     }

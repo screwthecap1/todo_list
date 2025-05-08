@@ -16,7 +16,7 @@
                         <tr>
                             <th>№</th>
                             <th>Name</th>
-                            <th colspan="3" class="text-center">Action</th>
+                            <th class="text-center">Action</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -24,6 +24,15 @@
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
                                 <td>{{ $task->name }}</td>
+                                <td class="text-center align-middle">
+                                    <form action="{{ route('task.destroy', $task->id) }}" method="post" class="d-inline-block">
+                                        @csrf
+                                        @method('delete')
+                                        <button type="submit" class="btn btn-danger">
+                                            Delete
+                                        </button>
+                                    </form>
+                                </td>
                             </tr>
                         @endforeach
                         </tbody>
