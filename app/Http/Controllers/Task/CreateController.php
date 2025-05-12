@@ -12,6 +12,5 @@ class CreateController extends Controller
     {
         Task::all();
         return view('tasks.create');
-        // TODO: Implement __invoke() method.
     }
 }

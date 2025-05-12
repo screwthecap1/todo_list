@@ -32,7 +32,6 @@
         <div class="container text-center">
             <h1 class="display-4">Welcome to the To-Do App</h1>
             <p class="lead">Manage your tasks easily with authentication</p>
-
             @guest
                 <a href="{{ route('login') }}" class="btn btn-primary btn-lg me-3">Log in</a>
                 <a href="{{ route('register') }}" class="btn btn-outline-primary btn-lg">Register</a>

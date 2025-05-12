@@ -14,7 +14,6 @@
                     <input type="text" class="form-control" name="name" placeholder="Enter name of task">
                 </div>
                 <!-- /.card-body -->
-
                 <div class="card-footer">
                     <input type="submit" class="btn btn-primary" value="Submit">
                 </div>
