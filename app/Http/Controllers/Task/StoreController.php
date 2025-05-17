@@ -11,7 +11,6 @@ class StoreController extends Controller
 {
     public function create()
     {
-        Task::all();
         return view('tasks.create');
     }
 

@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Task\IndexController as TaskIndexController;
-use App\Http\Controllers\Task\CreateController as TaskCreateController;
 use App\Http\Controllers\Task\StoreController as TaskStoreController;
 use App\Http\Controllers\Task\DestroyController as TaskDestroyController;
 

@@ -12,6 +12,5 @@ class IndexController extends Controller
     {
         $tasks = auth()->user()->tasks;
         return view('tasks.index', compact('tasks'));
-        // TODO: Implement __invoke() method.
     }
 }
